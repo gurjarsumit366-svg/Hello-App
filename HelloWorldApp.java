@@ -3,13 +3,13 @@ public class HelloWorldApp {
 
         if (args.length > 0) {
             System.out.print("Hello ");
-            
-            for (int i = 0; i < args.length; i++) {
-                System.out.print(args[i] + " ");
+
+            for (String name : args) {
+                System.out.print(name + " ");
             }
 
         } else {
-            System.out.println("Hello World");
+            System.out.println("Hello, World!");
         }
     }
 }
